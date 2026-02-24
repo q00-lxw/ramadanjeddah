@@ -1,0 +1,63 @@
+/* تنسيق جسم الصفحة والخلفية */
+body {
+    background-color: #f0f2f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    text-align: right; /* للغة العربية */
+}
+
+/* تنسيق النصوص */
+h1 {
+    color: #2c3e50;
+    font-size: 32px;
+    text-align: center;
+}
+
+p {
+    color: #34495e;
+    font-size: 18px;
+    margin: 20px;
+}
+/* تنسيق الصور */
+.images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;      /* مسافة بين الصور */
+  padding: 20px;   /* مساحة داخل الحاوية */
+  overflow: hidden; /* يخفي أي شيء خارج الحاوية */
+}
+
+.images img {
+  width: 300px;
+  border-radius: 15px;
+  padding: 8px;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.images img:hover {
+  transform: scale(1.05); /* تكبير الصورة عند المرور بالماوس */
+}
+/* شريط التنقل */
+.navbar {
+  background-color: #583838; /* بني */
+  display: flex;              /* ترتيب الروابط أفقياً */
+  justify-content: center;    /* توسيط الروابط */
+  padding: 15px;              /* مساحة داخل الشريط */
+}
+
+.navbar a {
+  color: white;               /* لون النص */
+  text-decoration: none;      /* إزالة الخط السفلي */
+  margin: 0 15px;             /* مسافة بين الروابط */
+  font-size: 18px;            /* حجم الخط */
+  padding: 8px 15px;          /* مساحة داخل الرابط */
+  border-radius: 8px;         /* حواف مدورة */
+  transition: 0.3s;           /* تأثير عند المرور بالماوس */
+}
+
+.navbar a:hover {
+  background-color: white;    /* الخلفية عند المرور */
+  color: #007BFF;             /* لون النص عند المرور */
+}
